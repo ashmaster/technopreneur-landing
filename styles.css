@@ -1,0 +1,191 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #fff;
+  }
+  /*--- navigation bar ---*/
+  .navbar {
+	width: 100%;
+	float:right;
+	z-index: 2;
+  }
+  .nav-link,
+  .navbar-brand {
+    color: #fff;
+    cursor: pointer;
+  }
+  .nav-link {
+	margin-right: 1em !important;
+	font-size: 1.25rem;
+	font-weight: 700;
+	font-family: OCR A Std, monospace;
+	text-decoration: none;
+  }
+  .nav-link:hover {
+	color: #CB0045;
+	text-decoration: none;
+  }
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+  #vantajs {
+	width: auto; height: 600px;
+  }
+  .img-logo {
+	max-width: 100%;
+	width:600px;
+	margin-top: 5rem;
+	display: block;
+	height: 240px;
+	height: auto;
+	  float: left;
+  }
+  
+  .draw-border {
+	box-shadow: inset 0 0 0 4px #002874;
+	color: #fff;
+	transition: color 0.25s 0.0833333333s;
+	position: relative;
+}
+.draw-border::before, .draw-border::after {
+	border: 0 solid transparent;
+	box-sizing: border-box;
+	content: '';
+	pointer-events: none;
+	position: absolute;
+	width: 0;
+	height: 0;
+	bottom: 0;
+	right: 0;
+}
+.draw-border::before {
+	border-bottom-width: 4px;
+	border-left-width: 4px;
+}
+.draw-border::after {
+	border-top-width: 4px;
+	border-right-width: 4px;
+}
+.draw-border:hover {
+	color: #fff;
+}
+.draw-border:hover::before, .draw-border:hover::after {
+	border-color: #CB0045;
+	transition: border-color 0s, width 0.25s, height 0.25s;
+	width: 100%;
+	height: 100%;
+}
+.draw-border:hover::before {
+	transition-delay: 0s, 0s, 0.25s;
+}
+.draw-border:hover::after {
+	transition-delay: 0s, 0.25s, 0s;
+}
+.btn {
+	background: none;
+	border: none;
+	cursor: pointer;
+	line-height: 1.5;
+	font: 700 1.2rem 'Roboto Slab', sans-serif;
+	padding: 1em 2em;
+	letter-spacing: 0.05rem;
+	width: 10rem;
+	position: absolute;
+	left: 45%;
+	bottom: 20%
+
+}
+
+.btn:focus {
+	outline: 2px dotted #002874;
+}
+
+
+.about {
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+	padding-top : 2rem;
+	padding : 4rem;
+	margin: auto;
+	text-align: center;
+}
+.about-header {
+	text-align: center;
+	margin:auto;
+	display: block;
+	
+}
+
+
+.img-iedc {
+	max-width: 100%;
+	width:120px;
+	height: 40px;
+	height: auto;
+	margin-bottom: 1rem;
+}
+
+.img-logo-about {
+	max-width: 100%;
+	width:300px;
+	height: 120px;
+	height: auto;
+	margin-bottom: 1rem;
+}
+
+.presents {
+	font-size: 1.25rem;
+	font-style: italic;
+	font-weight: 600;
+}
+
+.about p {
+	font-size: 1rem;
+	color: grey;
+}
+
+.about h1 {
+	font-size: 2rem;
+	font-family:Garamond, serif;
+	text-align: left;
+}
+
+.left {
+	float: left;
+	width: 40%;
+	padding-left: 3rem;
+	text-align: left;
+
+}
+
+.right {
+	float: right;
+	width: 40%;
+	padding-right: 3rem;
+	text-align: left;
+}
+@media screen and (max-width: 729px) {
+	.btn {
+		left: 30%;
+	}
+	.navbar {
+		background:#23153c;
+	}
+	.left {
+		width: 100%;
+		text-align: center;
+		float: none;
+		padding :0;
+	}
+	.right {
+		width: 100%;
+		text-align: center;
+		float: none;
+		padding :0;
+	}
+	.about h1 {
+		text-align: center;
+	}
+}
+
