@@ -1,4 +1,4 @@
-.main-timeline{ font-family: 'Poppins', sans-serif; }
+.main-timeline{ font-family:Arial, Helvetica, sans-serif }
 .main-timeline:after{
     content: '';
     display: block;
@@ -35,9 +35,8 @@
 }
 .main-timeline .title{
     color: #555;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 700;
-    text-transform: capitalize;
     margin: 0 0 15px 40px;
 }
 .main-timeline .description{
