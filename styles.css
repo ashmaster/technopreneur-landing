@@ -1,7 +1,11 @@
+html {
+	scroll-behavior: smooth;
+}
 body {
     padding: 0;
     margin: 0;
-    background: #fff;
+	background: #fff;
+	
   }
   /*--- navigation bar ---*/
   .navbar {
