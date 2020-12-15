@@ -5,6 +5,7 @@ body {
     padding: 0;
     margin: 0;
 	background: #fff;
+	overflow-x: hidden;
 	
   }
   /*--- navigation bar ---*/
@@ -33,7 +34,7 @@ body {
     justify-content: flex-end;
   }
   #vantajs {
-	width: auto; height: 100vh;
+	width: 100%; height: 100vh; position: absolute;
   }
   .img-logo {
 	max-width: 100%;
@@ -107,17 +108,25 @@ body {
 
 .about {
 	width: 100%;
-	height: auto;
+	height: 100vh;
 	background-color: #fff;
-	padding-top : 2rem;
 	padding : 4rem;
 	margin: auto;
 	text-align: center;
 }
+.about-contents {
+	display: flex;
+	flex-direction: row;
+}
 .about-header {
+	width: fit-content;
+	height:fit-content;
 	text-align: center;
-	margin:auto;
-	display: block;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	
 	
 }
 
@@ -132,8 +141,8 @@ body {
 
 .img-logo-about {
 	max-width: 100%;
-	width:300px;
-	height: 120px;
+	width:450px;
+	height: 180px;
 	height: auto;
 	margin-bottom: 1rem;
 }
@@ -151,24 +160,54 @@ body {
 
 .about h1 {
 	font-size: 2rem;
-	font-family:Garamond, serif;
-	text-align: left;
+	font-weight: 700;
+	text-align: center;
 }
 
 .left {
 	float: left;
-	width: 40%;
-	padding-left: 3rem;
-	text-align: left;
+	width: 50%;
+	margin-top: 3em;
+	padding-top: 2em;
+	margin-left: 6em;
+	margin-right: 3em;
+	text-align: center;
+	border-radius: 12px;
+	-webkit-box-shadow: 0px -4px 3px hsl(314, 73%, 26%);
+  -moz-box-shadow: 0px -4px 3px hsl(314, 73%, 26%);
+  box-shadow: 0px 4px 10px hsl(314, 73%, 26%);
+
 
 }
 
 .right {
 	float: right;
-	width: 40%;
-	padding-right: 3rem;
+	width: 60%;
+	padding-right: 6em;
 	text-align: left;
 }
+hr {
+	width: 3.25rem;
+	border-width: 0.2rem;
+	border-color: hsl(314, 73%, 26%);
+	margin-bottom: 3em;
+}
+.services {
+	width: auto;
+	padding-top: 4rem;
+	height: auto;
+	background-color: #fff;
+	margin: auto;
+	text-align: center;
+}
+.services h1 {
+	font-size: 2rem;
+	font-weight: 700;
+	text-align: center;
+}
+
+
+
 @media screen and (max-width: 729px) {
 	.btn {
 		left: 30%;
@@ -177,11 +216,9 @@ body {
 		background:#23153c;
 	}
 	.left {
-		width: 100%;
-		text-align: center;
-		float: none;
-		padding :0;
+		display: none;
 	}
+	
 	.right {
 		width: 100%;
 		text-align: center;
