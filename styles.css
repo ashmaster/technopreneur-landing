@@ -29,7 +29,7 @@ body {
     justify-content: flex-end;
   }
   #vantajs {
-	width: auto; height: 600px;
+	width: auto; height: 100vh;
   }
   .img-logo {
 	max-width: 100%;
