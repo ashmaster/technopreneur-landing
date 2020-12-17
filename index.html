@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     </head>
-    <body>
+    <body onload="random()">
         <nav class="navbar navbar-expand-md">
             <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
               <span class="navbar-toggler-icon"></span>
@@ -295,10 +295,38 @@
                         </div>
                     </div>
                     
-                    
-                    
-                    
+                        
                 </div>                
+            </div>
+            <div class="sponsors">
+                <h1 data-aos="fade-down">Previous Sponsors</h1>
+                <hr/>
+                <div class="sponsor-container">
+                    <img id="floating" class = "floating" src="./assets/sponsors/arbitron.jpeg" />
+                    <img id="floating" class = "floating" src="./assets/sponsors/mcfayden.png" />
+                    <img id="floating" class = "floating" src="./assets/sponsors/apollo.png" />
+                    <img id="floating" class = "floating" src="./assets/sponsors/bp.png" />
+                    <img id="floating" class = "floating" src="./assets/sponsors/itc.png" />
+                    <img id="floating" class = "floating" src="./assets/sponsors/tvs.png" />
+                    <img id="floating" class = "floating" src="./assets/sponsors/manorama.png" />
+                    <img id="floating" class = "floating" src="./assets/sponsors/ibs.png" />
+                    <img id="floating" class = "floating" src="./assets/sponsors/heera.png" />
+                    <img id="floating" class = "floating" src="./assets/sponsors/qburst.png" />
+                    <img id="floating" class = "floating" src="./assets/sponsors/1b2.png" />
+                    <img id="floating" class = "floating" src="./assets/sponsors/boi.jpeg" />
+                    <img id="floating" class = "floating" src="./assets/sponsors/tcs.png" />
+                    <img id="floating" class = "floating" src="./assets/sponsors/ebay.png" />
+                    <img id="floating" class = "floating" src="./assets/sponsors/uber.png" />
+                    <img id="floating" class = "floating" src="./assets/sponsors/line.png" />
+                    <img id="floating" class = "floating" src="./assets/sponsors/cleartip.png" />
+                    <img id="floating" class = "floating" src="./assets/sponsors/centrea.png" />
+                    <img id="floating" class = "floating" src="./assets/sponsors/cog.png" />
+                    <img id="floating" class = "floating" src="./assets/sponsors/comptree.png" />
+                    <img id="floating" class = "floating" src="./assets/sponsors/handf.jpeg" />
+                    <img id="floating" class = "floating" src="./assets/sponsors/ui.png" />
+                    <img id="floating" class = "floating" src="./assets/sponsors/club.png" />
+                    <img id="floating" class = "floating" src="./assets/sponsors/inet.png" />
+                </div>
             </div>
             
     </body>
@@ -321,7 +349,22 @@
             });
     </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="./sidenav.js"></script>
+    <script>
+        function random(){
+            
+            var elms = document.querySelectorAll("[id='floating']");
+            for(var i = 0; i < elms.length; i++) 
+                {   
+                    var ran = Math.floor(Math.random() * 5) + 3;
+                    ran = ran.toString();
+                    ran = ran+"s";
+                    elms[i].style.animationDuration = ran;
+                }
+            
+        }
+        
+
+    </script>
     <script>
       AOS.init();
     </script>

@@ -202,6 +202,7 @@ hr {
 	width: 100%;
 	background-color: #fff;
 	padding-top : 4rem;
+	padding-bottom: 4rem;
 	text-align: center;
 	flex-direction: row;
 }
@@ -289,6 +290,41 @@ hr {
 	transform: translate(-50%, -50%);
 	text-align: center;
   }
+
+  .sponsors {
+	height: auto;
+	width: 100%;
+	background-color:#23153c;
+	padding-top : 4rem;
+	text-align: center;
+	flex-direction: row; 
+  }
+  .sponsor-container {
+	  display: inline;
+  }
+  .sponsors h1 {
+	font-size: 2rem;
+	font-weight: 700;
+	text-align: center;  
+	color: #fff;
+  }
+
+  .sponsors img {
+	  max-width: 70%;
+	  height: auto;
+	  margin: 2vw
+  }
+  .floating {   
+    animation-name: floating; 
+    animation-duration: 3s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: ease-in-out; 
+} 
+  @keyframes floating { 
+    0% { transform: translate(0,  0px); } 
+    50%  { transform: translate(0, 15px); } 
+    100%   { transform: translate(0, -0px); }     
+	} 
 
 
 
