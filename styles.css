@@ -1,12 +1,10 @@
 html {
 	scroll-behavior: smooth;
-	overflow-x: hidden;
 }
 body {
     padding: 0;
     margin: 0;
 	background: #fff;
-	overflow-x: hidden;
 	
   }
   /*--- navigation bar ---*/
@@ -201,11 +199,12 @@ hr {
 
 .legacy {
 	height: auto;
+	width: 100%;
 	background-color: #fff;
 	padding-top : 4rem;
 	text-align: center;
+	flex-direction: row;
 }
-
 .legacy h1 {
 	font-size: 2rem;
 	font-weight: 700;
@@ -213,8 +212,8 @@ hr {
 }
 
 .leg-container {
-	width: 100%;
 	display: flex;
+	width: 100%;
 	flex-direction: column;
 	align-items: center;
 	padding-left:3rem;
@@ -238,11 +237,7 @@ hr {
 	object-fit: cover;
 	margin:2vw;
 }
-.sticky {
-	position: -webkit-sticky;
-	  position: sticky;
-	  top: 0;
-}
+
 
 .img-container {
 	position: relative;
@@ -250,7 +245,9 @@ hr {
 	min-height: 200px;
 	height:15vw;
 	width: 15vw;
-	margin:2vw;
+	margin-left:1vw;
+	margin-right:2vw;
+	margin-bottom: 1.5vw;
   }
   
   .overlay {
@@ -269,13 +266,22 @@ hr {
   
   .img-container:hover .overlay {
 	opacity: 0.6;
+	z-index: 1;
+	transform: scale(1.2);
+
+  }
+  .img-container:hover .img-leg {
+	transform: scale(0.8);
+	transition: 0.2s;
+
   }
   
   .text {
 	color: white;
-	font-size: 18px;
+	font-size: 16px;
 	position: absolute;
 	line-height: normal;
+	white-space: nowrap;
 	top: 50%;
 	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
@@ -283,6 +289,8 @@ hr {
 	transform: translate(-50%, -50%);
 	text-align: center;
   }
+
+
 
 
 @media screen and (max-width: 729px) {
