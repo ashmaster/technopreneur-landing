@@ -237,6 +237,7 @@ hr {
 	width: 15vw;
 	object-fit: cover;
 	margin:2vw;
+	box-shadow: 2px 5px 10px #000;
 }
 
 
@@ -296,6 +297,7 @@ hr {
 	width: 100%;
 	background-color:#23153c;
 	padding-top : 4rem;
+	padding-bottom : 4rem;
 	text-align: center;
 	flex-direction: row; 
   }
@@ -310,9 +312,11 @@ hr {
   }
 
   .sponsors img {
-	  max-width: 70%;
+	  width: 10%;
 	  height: auto;
-	  margin: 2vw
+	  margin: 2vw;
+	  box-shadow: 2px 10px 10px #000;
+
   }
   .floating {   
     animation-name: floating; 
