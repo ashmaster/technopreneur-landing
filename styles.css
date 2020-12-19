@@ -269,7 +269,7 @@ hr {
   .img-container:hover .overlay {
 	opacity: 0.6;
 	z-index: 1;
-	transform: scale(1.2);
+	transform: scale(1);
 
   }
   .img-container:hover .img-leg {
@@ -357,6 +357,10 @@ hr {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+	}
+	.sponsors img {
+		width: 20%;
+  
 	}
 
 }
