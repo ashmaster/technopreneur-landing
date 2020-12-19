@@ -32,6 +32,11 @@ body {
   .navbar-collapse {
     justify-content: flex-end;
   }
+  .navhr {
+	width: 3.25rem;
+	border-width: 0.2rem;
+	border-color: hsl(314, 73%, 26%);
+  }
   #vantajs {
 	width: auto; height: 100vh; position: absolute;
   }
@@ -273,8 +278,9 @@ hr {
 
   }
   .img-container:hover .img-leg {
-	transform: scale(0.8);
 	transition: 0.2s;
+	transform: scale(0.8);
+	box-shadow: none;
 
   }
   
