@@ -37,12 +37,12 @@ body {
   }
   .img-logo {
 	max-width: 100%;
-	width:600px;
-	margin-top: 5rem;
+	width:900px;
+	margin-top: 10rem;
+	margin-left: -20rem;
 	display: block;
-	height: 240px;
 	height: auto;
-	  float: left;
+	float: left;
   }
   
   .draw-border {
@@ -51,6 +51,7 @@ body {
 	transition: color 0.25s 0.0833333333s;
 	position: relative;
 }
+
 .draw-border::before, .draw-border::after {
 	border: 0 solid transparent;
 	box-sizing: border-box;
@@ -100,6 +101,11 @@ body {
 
 }
 
+.explore {
+	left: 5%;
+	margin-bottom: 130px;
+}
+
 .btn:focus {
 	outline: 2px dotted #002874;
 }
@@ -131,10 +137,10 @@ body {
 
 .img-iedc {
 	max-width: 100%;
-	width:120px;
-	height: 40px;
+	width:100px;
+	height: 20px;
 	height: auto;
-	margin-bottom: 1rem;
+	/* margin-bottom: 1rem; */
 }
 
 .img-logo-about {
