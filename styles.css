@@ -42,19 +42,15 @@ body {
   }
   .img-logo {
 	max-width: 100%;
-	width:900px;
+	width: 60%;
 	margin-top: 10rem;
-	margin-left: -20rem;
-	display: block;
 	height: auto;
 	float: left;
   }
-  
   .draw-border {
 	box-shadow: inset 0 0 0 4px #002874;
 	color: #fff;
 	transition: color 0.25s 0.0833333333s;
-	position: relative;
 }
 
 .draw-border::before, .draw-border::after {
@@ -67,6 +63,19 @@ body {
 	height: 0;
 	bottom: 0;
 	right: 0;
+}
+.btn {
+	background: none;
+	border: none;
+	cursor: pointer;
+	line-height: 1.5;
+	font: 700 1.2rem 'Roboto Slab', sans-serif;
+	padding: 1em 2em;
+	letter-spacing: 0.05rem;
+	width: 10rem;
+	position: absolute;
+	left: 45%;
+	bottom: 15%;
 }
 .draw-border::before {
 	border-bottom-width: 4px;
@@ -91,25 +100,9 @@ body {
 .draw-border:hover::after {
 	transition-delay: 0s, 0.25s, 0s;
 }
-.btn {
-	background: none;
-	border: none;
-	cursor: pointer;
-	line-height: 1.5;
-	font: 700 1.2rem 'Roboto Slab', sans-serif;
-	padding: 1em 2em;
-	letter-spacing: 0.05rem;
-	width: 10rem;
-	position: absolute;
-	left: 45%;
-	bottom: 20%
 
-}
 
-.explore {
-	left: 5%;
-	margin-bottom: 130px;
-}
+
 
 .btn:focus {
 	outline: 2px dotted #002874;
@@ -118,7 +111,7 @@ body {
 
 .about {
 	width: auto;
-	height: 100vh;
+	height: auto;
 	background-color: #fff;
 	padding : 4rem;
 	text-align: center;
@@ -150,7 +143,7 @@ body {
 
 .img-logo-about {
 	max-width: 100%;
-	width:450px;
+	width:60%;
 	height: 180px;
 	height: auto;
 	margin-bottom: 1rem;
@@ -258,16 +251,13 @@ hr {
 	min-height: 200px;
 	height:15vw;
 	width: 15vw;
-	margin-left:1vw;
-	margin-right:2vw;
-	margin-bottom: 1.5vw;
   }
   
   .overlay {
 	position: absolute;
-	top: 2vw;
+	top: 0;
 	bottom: 0;
-	left: 2vw;
+	left: 0;
 	right: 0;
 	height: 100%;
 	width: 100%;
@@ -280,15 +270,9 @@ hr {
   .img-container:hover .overlay {
 	opacity: 0.6;
 	z-index: 1;
-	transform: scale(1);
 
   }
-  .img-container:hover .img-leg {
-	transition: 0.2s;
-	transform: scale(0.8);
-	box-shadow: none;
 
-  }
   
   .text {
 	color: white;
@@ -342,12 +326,40 @@ hr {
     100%   { transform: translate(0, -0px); }     
 	} 
 
-
+	.legacy {
+		height: 100vh;
+		width: 100%;
+		overflow-x: hidden;
+		background-color: #fff;
+		padding-top : 4rem;
+		padding-bottom: 4rem;
+		text-align: center;
+	}
+	.legacy h1 {
+		font-size: 2rem;
+		font-weight: 700;
+		text-align: center;
+	}
+	.img-leg2 {
+		border-radius: 50%;
+		min-width: 200px;
+		min-height: 200px;
+		height:15vw;
+		width: 15vw;
+		object-fit: cover;
+	}
 
 
 @media screen and (max-width: 729px) {
 	.btn {
-		left: 30%;
+		left: 33%;
+	}
+	.img-logo {
+		float: none;
+		position: absolute;
+		top: 5rem;
+		margin-left: 0;
+		left: 20%;
 	}
 	.navbar {
 		background:#23153c;
@@ -375,5 +387,8 @@ hr {
   
 	}
 
+	
+
 }
+
 
