@@ -1,12 +1,54 @@
-html {
-	scroll-behavior: smooth;
+::-webkit-scrollbar {
+	width:8px  !important;	
+	background-color: black;
+	
+ }
+
+::-webkit-scrollbar-thumb 
+{
+	background: linear-gradient( transparent, #393fdf, #6144ba, #9208ae, #d01776);
+	border-radius: 3px;
 }
+
 body {
     padding: 0;
     margin: 0;
 	background: #fff;
 	
   }
+
+  .scrollTop
+  {
+	position: fixed;
+	bottom: 0px;
+	right: 20px;
+	width: 40px;
+	height: 40px;
+	background: url(assets/up.png);
+	border-radius: 50%;
+	border-color: rgb(255, 230, 230);
+	background-color: transparent;
+	background-size: 30px;
+	background-position: center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	z-index: 100000;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.5s;
+  }
+
+  .scrollTop:hover{
+	  background-color: rgb(235, 201, 201);
+  }
+
+  .scrollTop.active{
+	  bottom: 40px;
+	  visibility: visible;
+	  opacity: 1;
+  }
+
+
   /*--- navigation bar ---*/
   .navbar {
 	width: 100%;
