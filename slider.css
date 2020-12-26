@@ -59,3 +59,28 @@ body {
 .input_fields {
     display: none;
 }
+
+.carousel_button_left {
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+  color: #000;
+  margin-right: 10px;
+}
+.carousel_button_right {
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+  color: #000;
+  margin-left: 10px;
+}
+
+.carousel_icons {
+  font-size: 40px;
+}

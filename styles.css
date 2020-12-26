@@ -9,7 +9,9 @@
 	background: linear-gradient( transparent, #393fdf, #6144ba, #9208ae, #d01776);
 	border-radius: 3px;
 }
-
+html{
+	scroll-behavior: smooth;
+}
 body {
     padding: 0;
     margin: 0;
@@ -80,7 +82,7 @@ body {
 	border-color: hsl(314, 73%, 26%);
   }
   #vantajs {
-	width: auto; height: 100vh; position: absolute;
+	width: auto; height: 100vh;
   }
   .img-logo {
 	max-width: 100%;
@@ -152,8 +154,9 @@ body {
 
 
 .about {
-	width: auto;
+	width: 100%;
 	height: auto;
+	min-height: 100vh;
 	background-color: #fff;
 	padding : 4rem;
 	text-align: center;
@@ -419,11 +422,7 @@ hr {
 	.about h1 {
 		text-align: center;
 	}
-	.leg-container-col {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
+
 	.sponsors img {
 		width: 20%;
   
