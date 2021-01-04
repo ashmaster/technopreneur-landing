@@ -16,6 +16,7 @@ body {
     padding: 0;
     margin: 0;
 	background: #fff;
+	overflow-x: hidden;
 	
   }
 
@@ -81,16 +82,27 @@ body {
 	border-width: 0.2rem;
 	border-color: hsl(314, 73%, 26%);
   }
+  #mobile {
+	width: 100%; height: 100vh;
+	background-image: linear-gradient(to bottom right, #461E47, #040D21, #032C6A);
+	display: none;
+  }
   #vantajs {
 	width: auto; height: 100vh;
+	background-image: linear-gradient(to bottom right, #461E47, #040D21, #032C6A);
+  }
+  .masthead {
+	width: auto; height: 100vh;
+	background-image: linear-gradient(to bottom right, #461E47, #040D21, #032C6A);
   }
   .img-logo {
 	max-width: 100%;
-	width: 60%;
+	width: 70%;
 	margin-top: 10rem;
 	height: auto;
 	float: left;
   }
+  
   .draw-border {
 	box-shadow: inset 0 0 0 4px #002874;
 	color: #fff;
@@ -246,35 +258,6 @@ hr {
 	text-align: center;
 }
 
-.legacy {
-	height: auto;
-	width: 100%;
-	background-color: #fff;
-	padding-top : 4rem;
-	padding-bottom: 4rem;
-	text-align: center;
-	flex-direction: row;
-}
-.legacy h1 {
-	font-size: 2rem;
-	font-weight: 700;
-	text-align: center;
-}
-
-.leg-container {
-	display: flex;
-	width: 100%;
-	flex-direction: column;
-	align-items: center;
-	padding-left:3rem;
-	padding-right: 3rem;
-}
-.leg-container-col {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-}
-
 
 
 .img-leg {
@@ -336,7 +319,7 @@ hr {
   .sponsors {
 	height: auto;
 	width: 100%;
-	background-color:#23153c;
+	background-image: linear-gradient(to bottom right, #461E47, #040D21, #032C6A);
 	padding-top : 4rem;
 	padding-bottom : 4rem;
 	text-align: center;
@@ -356,7 +339,6 @@ hr {
 	  width: 10%;
 	  height: auto;
 	  margin: 2vw;
-	  box-shadow: 2px 10px 10px #000;
 
   }
   .floating {   
@@ -372,10 +354,10 @@ hr {
 	} 
 
 	.legacy {
-		height: 100vh;
+		height: auto;
 		width: 100%;
 		overflow-x: hidden;
-		background-color: #fff;
+		background-image: linear-gradient(to bottom right ,#C9D6FF, #ffffff,#E2E2E2);
 		padding-top : 4rem;
 		padding-bottom: 4rem;
 		text-align: center;
@@ -393,18 +375,84 @@ hr {
 		width: 15vw;
 		object-fit: cover;
 	}
+	.carousel-buttons {
+		background-color: transparent;
+	}
+	.carousel-options {
+		background-color: transparent;
+	}
 
+	.contacts {
+		height: auto;
+		width: 100%;
+		background-color: #040C1F;
+		overflow-x: hidden;
+		padding-top : 4rem;
+		padding-bottom: 4rem;
+		text-align: center;
+	}
+
+	.contact-head {
+		font-size: 2rem;
+		font-weight: 700;
+		color: #fff;
+		text-align: center;
+	}
+
+	
+
+	.contact {
+		width: 300px;
+		height: 300px;
+		background-color: rgba(255, 255, 255, .15);  
+		backdrop-filter: blur(5px);
+		margin-left: 40px;
+		margin-right: 40px;
+		margin-top: 20px;
+		-webkit-box-shadow: 0px -4px 3px #0A274F;
+  		-moz-box-shadow: 0px -4px 3px #0A274F;
+		  box-shadow: 0px 4px 10px#0A274F;
+		  display: inline-block;
+		  align-items: center;
+		padding:20px;
+		border-radius: 10px;
+	}
+
+	.contact-img {
+		border-radius: 50%;
+		width: 150px;
+		height: 150px;
+		object-fit: cover;
+	}
+
+	.contact-name {
+		font-size: 22px;
+		font-weight: 600;
+		color: #fff;
+		text-align: center;
+		margin-top: 10px;
+	}
+
+	.contact p{
+		font-size: 16px;
+		color: #8193B2;
+		font-weight: bold;
+	}
 
 @media screen and (max-width: 729px) {
 	.btn {
 		left: 33%;
+		bottom: 10%;
 	}
 	.img-logo {
 		float: none;
 		position: absolute;
 		top: 5rem;
 		margin-left: 0;
-		left: 20%;
+		left: 3rem;
+		width: 80%;
+		margin-top: 1rem;
+
 	}
 	.navbar {
 		background:#23153c;
@@ -427,6 +475,24 @@ hr {
 		width: 20%;
   
 	}
+
+	#vantajs {
+		display: none;
+	}
+	#mobile {
+		display:block;
+	}
+	#globe {
+		margin-top: 8rem;
+		width: 100%;
+		height: auto;
+	}
+	canvas {
+		width: 320px;
+		height: 420px;
+	}
+
+	
 
 	
 
