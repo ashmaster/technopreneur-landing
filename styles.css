@@ -269,6 +269,7 @@ hr {
 	text-align: center;
 }
 
+
 .services-text-left {
 	
 	font-size: 1em;
@@ -330,6 +331,7 @@ hr {
 	color: #C9D6FF;
 	border-left: 3px solid;
 }
+
 
 
 
@@ -430,7 +432,7 @@ hr {
 		height: auto;
 		width: 100%;
 		overflow-x: hidden;
-		background-color: #fff;
+		background-image: linear-gradient(to bottom right ,#C9D6FF, #ffffff,#E2E2E2);
 		padding-top : 4rem;
 		padding-bottom: 4rem;
 		text-align: center;
@@ -499,6 +501,7 @@ hr {
 		height: 150px;
 		object-fit: cover;
 	}
+
 
 	.contact-name {
 		font-size: 22px;
@@ -579,6 +582,7 @@ hr {
 		padding-left: 6rem;
 		padding-right: 6rem;
 	}
+
 
 	
 
